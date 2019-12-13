@@ -1,0 +1,17 @@
+package com.hocjavaweb.controller.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class NewsController {
+
+	@RequestMapping(value = "/san-pham", method = RequestMethod.GET)
+	 public ModelAndView sanphamPage() {
+	     ModelAndView mav = new ModelAndView("web/sanpham");
+	     return mav;
+	 }
+	
+}

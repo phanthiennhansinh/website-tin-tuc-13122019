@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/common/taglib.jsp" %>
+<c:url var="APIurl" value="/api/news"/>
+<c:url var ="NewURL" value="/quan-tri/bai-viet/danh-sach"/>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Chi Tiết Bài Viết</title>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+        	<h1 class="my-4" style="padding-left: 40px;">Category</h1>
+			<div class="list-group">
+				<ul id="myid">
+					<c:forEach var="item" items="${listCategory}" >
+				    	<li class="list-group-item" value="${item.code}">${item.name}</li>
+				    </c:forEach>
+				</ul>			
+			</div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+	        <div class="card mt-4">
+	          <img class="card-img-top img-fluid" src="${detailNews.base64 }" alt="">
+	          <div class="card-body">
+	            <h3 class="card-title">${detailNews.title}</h3>
+	            <p class="card-text">${detailNews.content}</p>
+	            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+	            4.0 stars
+	          </div>
+	        </div>
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+package com.hocjavaweb.converter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.hocjavaweb.dto.RoleDTO;
+import com.hocjavaweb.dto.UserDTO;
+import com.hocjavaweb.entity.RoleEntity;
+import com.hocjavaweb.entity.UserEntity;
+
+@Component
+public class RoleConverter {
+
+}

@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+E:\code_lam_lai_java_web_b\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2623162216.index
+2730531055.index
+528613197.index
+3789912363.index
+2121889249.index
+1695732022.index
+658303250.index

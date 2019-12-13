@@ -1,0 +1,26 @@
+package com.hocjavaweb.api.admin;
+
+import java.util.Base64;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hocjavaweb.dto.NewsDTO;
+
+@RestController
+public class UpLoadFileAPI {
+
+    @PostMapping(value = "/api/upload")
+    public ResponseEntity<Void> uploadFile(@RequestBody UploadFileDTO uploadFileDTO) {
+        try {
+            byte[] decodeBase64 = Base64.getDecoder().decode(uploadFileDTO.getBase64().getBytes());
+            uploadFileUtils.writeOrUpdate(decodeBase64, "/thumbnail/"+uploadFileDTO.getName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.noContent().build();
+    }
+	
+}

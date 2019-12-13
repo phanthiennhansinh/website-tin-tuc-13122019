@@ -1,0 +1,5 @@
+package com.hocjavaweb.api.admin;
+
+public class UpLoadFileAPI {
+
+}

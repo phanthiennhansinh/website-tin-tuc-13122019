@@ -1,0 +1,26 @@
+package com.hocjavaweb.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hocjavaweb.dto.UserDTO;
+import com.hocjavaweb.repository.IUserRepository;
+import com.hocjavaweb.service.IUserService;
+
+@Service
+public class UserService implements IUserService{
+
+	
+	@Autowired
+	private IUserRepository userRepository;
+	
+	@Override
+	public List<UserDTO> findAll() {
+		
+	}
+	
+	
+
+}

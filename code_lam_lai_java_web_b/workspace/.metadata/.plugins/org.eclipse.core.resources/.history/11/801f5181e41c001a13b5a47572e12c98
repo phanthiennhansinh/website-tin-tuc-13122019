@@ -1,0 +1,5 @@
+package com.hocjavaweb.controller.web;
+
+public class NewsController {
+
+}

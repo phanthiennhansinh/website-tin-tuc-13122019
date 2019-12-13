@@ -1,0 +1,5 @@
+package com.hocjavaweb.dto;
+
+public class UploadFileDTO {
+
+}

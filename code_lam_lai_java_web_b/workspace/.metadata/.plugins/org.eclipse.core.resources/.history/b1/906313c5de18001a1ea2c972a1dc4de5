@@ -1,0 +1,24 @@
+package com.hocjavaweb.utils;
+
+import java.io.File;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UploadFileUtils {
+
+	 public final String root = "/usr/var";
+
+	    public void writeOrUpdate(byte[] bytes, String path) {
+	        File file = new File(StringUtils.substringBeforeLast(root + path, "/"));
+	        if (!file.exists()) {
+	            file.mkdir();
+	        }
+	        try(FileOutputStream fileOutputStream = new FileOutputStream(new File(root + path))) {
+	            fileOutputStream.write(bytes);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	
+}
