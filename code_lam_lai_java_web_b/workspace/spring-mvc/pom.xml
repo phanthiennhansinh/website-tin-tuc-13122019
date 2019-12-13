@@ -16,7 +16,7 @@
 		
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		
-		<spring.data>1.11.5.RELEASE</spring.data>
+		<spring.data>1.11.23.RELEASE</spring.data>
 		
 		<springsecurity.version>3.2.8.RELEASE</springsecurity.version>
 		
